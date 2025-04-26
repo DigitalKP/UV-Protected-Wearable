@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Bamboo Cool Coat",
+      "price": 799,
+      "stock": true,
+      "img": "images/coat1.jpg",
+      "description": "A bamboo fiber-based cool coat, naturally UV-resistant and antibacterial."
+    },
+    {
+      "id": 2,
+      "name": "UV Shield Polyester",
+      "price": 649,
+      "stock": false,
+      "img": "images/coat2.jpg",
+      "description": "A UV shield polyester coat designed to keep you safe and comfortable in the summer sun."
+    },
+    {
+      "id": 3,
+      "name": "Nylon Summer Zip-Up",
+      "price": 699,
+      "stock": true,
+      "img": "images/coat3.jpg",
+      "description": "A lightweight nylon zip-up with UV treatment, perfect for summer activities."
+    }
+  ]
+  

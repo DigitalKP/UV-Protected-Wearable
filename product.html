@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop UV Wear – Kapil Saini</title>
+  <link rel="stylesheet" href="../styles/product.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Kapil Saini UV Wear</h1>
+    <p>Premium Sun Protection Apparel</p>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </header>
+  <div id="cart-section">
+    <h3>🛒 Your Basket</h3>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+ 
+<section class="product-list">
+  <!-- Existing Products -->
+  <h4>Adult UV Wear</h4>
+  <div class="product-card">
+    <img src="images/bamboo-coat.jpg" alt="Bamboo Fabric Coat">
+    <h3>Bamboo UV Coat</h3>
+    <p>Cool, antibacterial, and naturally UV-resistant.</p>
+    <button onclick="addToCart(1)">Add to Cart</button>
+
+  </div>
+
+  <div class="product-card out-of-stock">
+    <img src="images/polyester-coat.jpg" alt="Polyester UV Coat">
+    <h3>Polyester UV Coat</h3>
+    <p>Lightweight & treated for maximum UV protection.</p>
+    <button disabled>Out of Stock</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/nylon-coat.jpg" alt="Nylon UV Coat">
+    <h3>Nylon UV Jacket</h3>
+    <p>Perfect for hikes and outdoor activity.</p>
+    <button onclick="addToCart(3)">Add to Cart</button>
+  </div>
+
+  <!-- Kids Collection -->
+  <h4>Kids UV Jackets</h4>
+  <div class="product-card">
+    <img src="images/kids_uv_jacket_boy1.png" alt="UV Jacket Boy 1" />
+    <h3>UV Jacket Boy 1</h3>
+    <p>₹799</p>
+    <button onclick="addToCart(4)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/kids_uv_jacket_boy2.png" alt="UV Jacket Boy 2" />
+    <h3>UV Jacket Boy 2</h3>
+    <p>₹849</p>
+    <button onclick="addToCart(7)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/kids_uv_jacket_girl2.png" alt="UV Jacket girl 2" />
+    <h3>UV Jacket girl 2</h3>
+    <p>₹899</p>
+    <button onclick="addToCart(6)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/kids_uv_jacket_girlboy.png" alt="UV Jacket Girl & Boy" />
+    <h3>UV Jacket Girl & Boy</h3>
+    <p>Perfect for siblings. Dual-layer UV shield.</p>
+    <button onclick="addToCart(5)">Add to Cart</button>
+  </div>
+
+  <!-- Family Set -->
+  <h4>Family Pack – Best Seller!</h4>
+  <div class="product-card family-highlight">
+    <img src="images/family_uv_jacket_boygirl.png" alt="Family UV Jacket Set" />
+    <h3>Family UV Jacket Set</h3>
+    <p>Complete protection for mom, dad, and kids. Stay safe together!</p>
+    <button onclick="addToCart(6)">Add to Cart</button>
+  </div>
+</section>
+
+<footer>
+  <p>Contact: sainirkapil94@gmail.com | 📞 7355466659</p>
+</footer>
+
+  <script src="js/cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Kapil Saini UV Wear</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Your Shopping Cart</h1>
+    <a href="product.html" class="back-btn">← Continue Shopping</a>
+  </header>
+
+  <section class="cart">
+    <div id="cart-items">
+      <p>No items in cart.</p>
+    </div>
+    <div class="cart-summary">
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: sainirkapil94@gmail.com | 📞 7355466659</p>
+  </footer>
+
+  <script>
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartContainer = document.getElementById("cart-items");
+    const totalDisplay = document.getElementById("total");
+
+    function renderCart() {
+      if (cartItems.length === 0) {
+        cartContainer.innerHTML = "<p>No items in cart.</p>";
+        totalDisplay.textContent = "0";
+        return;
+      }
+
+      cartContainer.innerHTML = "";
+      let total = 0;
+
+      cartItems.forEach(item => {
+        const itemEl = document.createElement("div");
+        itemEl.className = "cart-item";
+        itemEl.innerHTML = `<strong>${item.name}</strong> - ₹${item.price}`;
+        cartContainer.appendChild(itemEl);
+        total += item.price;
+      });
+
+      totalDisplay.textContent = total;
+    }
+
+    function checkout() {
+      window.location.href = "checkout.html";
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>

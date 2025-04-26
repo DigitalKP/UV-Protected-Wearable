@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #222;
+  }
+  
+  .header {
+    background: #002b36;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .header .tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-btn {
+    background: #ffa500;
+    color: #000;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background: #ffcc00;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background: #e0f7fa;
+  }
+  
+  .hero img {
+    max-width: 400px;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .hero-text {
+    max-width: 400px;
+  }
+  
+  .hero .cta {
+    background: #009688;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .feature {
+    max-width: 250px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #002b36;
+    color: white;
+  }
+  .featured-family {
+    text-align: center;
+    background: #fef5e7;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+  }
+  
+  .featured-family h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .featured-family .tagline {
+    font-size: 1.2rem;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .family-img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .kids-showcase {
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .kids-showcase h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .kids-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .kids-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .kids-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
